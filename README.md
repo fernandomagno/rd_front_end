@@ -10,8 +10,8 @@ Se não tiver instalado, faça o download no site: https://rubyinstaller.org/dow
 3) Se os 2 passos acima estiverem correto, execute o comando na pasta do projeto "cucumber"
 
 4) Se tudo tiver correto no projeto o resultado no console será o seguinte :
-3 scenarios (3 passed)
-9 steps (9 passed)
+2 scenarios (2 passed)
+6 steps (6 passed)
 
 
  

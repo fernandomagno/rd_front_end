@@ -1,6 +1,17 @@
-require 'capybara'
+require 'rspec'
 require 'capybara/cucumber'
+require 'site_prism'
+require 'faker'
+require 'cpf_faker'
+ 
+Capybara.register_driver :site_prism do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
 
 Capybara.configure do |config|
-    config.default_driver = :selenium_chrome
+  config.run_server = false
+  Capybara.default_driver = :site_prism
+  Capybara.page.driver.browser.manage.window.maximize
+  config.default_max_wait_time = 10
+  config.app_host = 'https://opensource-demo.orangehrmlive.com'
 end
