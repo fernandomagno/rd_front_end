@@ -1,4 +1,4 @@
-class CadastroPage < SitePrism::Page
+class RdPage < SitePrism::Page
     set_url '/'
   
     def preencher_login
